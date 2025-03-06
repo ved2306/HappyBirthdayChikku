@@ -41,12 +41,12 @@ function showMessage() {
     var surpriseText = document.getElementById("surpriseText");
     var bgMusic = document.getElementById("bgMusic");
     var loveScreen = document.getElementById("loveScreen");
-if (!isMusicPlaying) {
-        setTimeout(() => {
-            bgMusic.play();
-        }, 10000);
+document.addEventListener('click', () => {
+    if (!isMusicPlaying) {
+        bgMusic.play().catch(error => console.log("Autoplay blocked:", error));
         isMusicPlaying = true;
     }
+});
 if (messageIndex >= messages.length) {
     loveScreen.style.display = "flex";
 
