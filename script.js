@@ -1,9 +1,10 @@
-document.getElementById("bgMusic").volume = 0.7; // 20% volume
+document.getElementById("bgMusic").volume = 0.5; // 20% volume
 var messages = [
     "Hellooo Birthday Girllll (click)",
     "CLICK AGAIN !!",
     "OK So Now You Know ",
-    "Let Me Play Some Video Just A sec",
+    "Let Me Play Some Music Just A sec",
+    "OKAY Also Some Video",
 	"There You Go Sweetheart Now Enjoy✨",
 	"Ofc A Happiest Happy Birthday My Queen 👑💕🥳💐",
 	"And I Love You So So SO Much ❤",
