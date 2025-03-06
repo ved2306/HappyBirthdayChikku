@@ -42,8 +42,13 @@ function showMessage() {
     var bgMusic = document.getElementById("bgMusic");
     var loveScreen = document.getElementById("loveScreen");
 document.addEventListener('click', () => {
+let isMusicPlaying = false; // Ensure this is defined
+
+document.addEventListener("click", function () {
     if (!isMusicPlaying) {
-        bgMusic.play().catch(error => console.log("Autoplay blocked:", error));
+        setTimeout(() => {
+            document.getElementById("bgMusic").play();
+        }, 10000);
         isMusicPlaying = true;
     }
 });
