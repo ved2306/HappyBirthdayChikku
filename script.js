@@ -1,12 +1,9 @@
-document.getElementById("bgMusic").volume = 0.5; // 20% volume
+document.getElementById("bgMusic").volume = 0.7; // 20% volume
 var messages = [
     "Hellooo Birthday Girllll (click)",
     "CLICK AGAIN !!",
-    "CLICK CLICK AGAIN !!",
     "OK So Now You Know ",
-    "Heehhehe heloooo ",
-    "omg wait",
-    "OKAY Let Me Play Some Video",
+    "Let Me Play Some Video Just A sec",
 	"There You Go Sweetheart Now Enjoy✨",
 	"Ofc A Happiest Happy Birthday My Queen 👑💕🥳💐",
 	"And I Love You So So SO Much ❤",
@@ -43,17 +40,12 @@ function showMessage() {
     var surpriseText = document.getElementById("surpriseText");
     var bgMusic = document.getElementById("bgMusic");
     var loveScreen = document.getElementById("loveScreen");
-document.addEventListener('click', () => {
-let isMusicPlaying = false; // Ensure this is defined
-
-document.addEventListener("click", function () {
-    if (!isMusicPlaying) {
+if (!isMusicPlaying) {
         setTimeout(() => {
-            document.getElementById("bgMusic").play();
+            bgMusic.play();
         }, 10000);
         isMusicPlaying = true;
     }
-});
 if (messageIndex >= messages.length) {
     loveScreen.style.display = "flex";
 
